@@ -1,14 +1,14 @@
 {
-  "projectName": "sibiuamazonlextestap",
+  "projectName": "chatbottest",
   "version": "3.1",
   "frontend": "javascript",
   "javascript": {
     "framework": "vue",
     "config": {
-      "SourceDir": "resources/js",
-      "DistributionDir": "public",
-      "BuildCommand": "npm run prod",
-      "StartCommand": "npm run watch"
+      "SourceDir": "src",
+      "DistributionDir": "dist",
+      "BuildCommand": "npm.cmd run-script build",
+      "StartCommand": "npm.cmd run-script serve"
     }
   },
   "providers": [
