@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sibiuamazonlextestap-dev-213927-authRole",
+      "UnauthRoleArn": "arn:aws:iam::562872975428:role/amplify-sibiuamazonlextestap-dev-213927-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::562872975428:role/amplify-sibiuamazonlextestap-dev-213927-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-sibiuamazonlextestap-dev-213927-deployment",
+      "UnauthRoleName": "amplify-sibiuamazonlextestap-dev-213927-unauthRole",
+      "StackName": "amplify-sibiuamazonlextestap-dev-213927",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:562872975428:stack/amplify-sibiuamazonlextestap-dev-213927/bdabc040-165e-11ed-946e-029d79159d9a",
+      "AmplifyAppId": "d2zl0nqt9tx1y0"
+    }
+  }
+}

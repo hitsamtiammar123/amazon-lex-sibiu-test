@@ -1,0 +1,17 @@
+{
+  "projectName": "sibiuamazonlextestap",
+  "version": "3.1",
+  "frontend": "javascript",
+  "javascript": {
+    "framework": "vue",
+    "config": {
+      "SourceDir": "resources/js",
+      "DistributionDir": "public",
+      "BuildCommand": "npm run prod",
+      "StartCommand": "npm run watch"
+    }
+  },
+  "providers": [
+    "awscloudformation"
+  ]
+}
