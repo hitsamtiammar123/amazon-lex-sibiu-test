@@ -5,10 +5,10 @@
   "javascript": {
     "framework": "vue",
     "config": {
-      "SourceDir": "src",
-      "DistributionDir": "dist",
-      "BuildCommand": "npm.cmd run-script build",
-      "StartCommand": "npm.cmd run-script serve"
+      "SourceDir": "resources/js",
+      "DistributionDir": "public",
+      "BuildCommand": "npm.cmd run prod",
+      "StartCommand": "php artisan serve"
     }
   },
   "providers": [
