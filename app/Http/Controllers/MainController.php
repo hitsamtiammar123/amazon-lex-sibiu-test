@@ -7,6 +7,7 @@ use Inertia\Inertia;
 use Inertia\Event;
 use App\Models\Person;
 use Illuminate\Support\Facades\Redirect;
+use Aws\LexRuntimeService\LexRuntimeServiceClient;
 
 class MainController extends Controller
 {
@@ -35,4 +36,30 @@ class MainController extends Controller
         }
         return redirect('/');
     }
+
+    public function chat(Request $request){
+        $lex_client = new LexRuntimeServiceClient([
+            'credentials' => [
+                'key' => env('AWS_ACCESS_KEY_ID'),
+                'secret' => env('AWS_SECRET_ACCESS_KEY')
+            ],
+            'region' => 'ap-southeast-1',
+            'version' => '2016-11-28',
+            'http' => [
+                'verify' => false
+            ]
+        ]);
+        $result = $lex_client->postText([
+            'botAlias' => '$LATEST',
+            'botName' => 'BookTrip_dev',
+            'inputText' => $request->input('inputText', ''),
+            'userId' => $request->input('userId', 'user-1234-56788')
+
+        ]);
+        return [
+            'message' => $result['message'],
+            'dialogState' => $result['dialogState']
+        ];
+    }
+
 }
