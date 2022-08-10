@@ -58,7 +58,8 @@ class MainController extends Controller
         ]);
         return [
             'message' => $result['message'],
-            'dialogState' => $result['dialogState']
+            'dialogState' => $result['dialogState'],
+            'slots' => $result['slots']
         ];
     }
 

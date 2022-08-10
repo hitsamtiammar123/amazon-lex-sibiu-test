@@ -10,19 +10,19 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js  --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "axios": "^0.19",
+        "axios": "^0.19.2",
         "cross-env": "^7.0",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "resolve-url-loader": "^3.1.0",
+        "sass": "^1.54.4",
+        "sass-loader": "^13.0.2",
         "vue-loader": "^17.0.0"
     },
     "dependencies": {
-        "@aws-amplify/ui-components": "^1.9.6",
-        "@aws-amplify/ui-vue": "^2.4.17",
         "@inertiajs/inertia": "^0.11.0",
         "@inertiajs/inertia-vue3": "^0.6.0",
-        "aws-amplify": "^4.3.30",
-        "vue": "^3.2.37"
+        "vue": "^3.2.37",
+        "vue-axios": "^3.4.1"
     }
 }
